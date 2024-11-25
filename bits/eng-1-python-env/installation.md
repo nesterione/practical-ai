@@ -1,3 +1,8 @@
+---
+layout: default
+title: Practical AI :: Installing Python
+---
+
 # Installing Python: A Step-by-Step Guide
 
 This guide will help you install Python on your system. Please follow the instructions specific to your operating system.

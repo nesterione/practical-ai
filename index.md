@@ -1,4 +1,9 @@
-# practical-ai
+---
+layout: default
+title: Practical AI
+---
+
+# Practical AI
 
 This repository contains educational material on practical AI. The goal is to provide a collection of small self-contained educational units (bits) that can be combined to create a more comprehensive understanding of AI.
 
@@ -6,7 +11,7 @@ You can create own path through the bits by following the links in the README.md
 
 ## Bits
 
-![paths.drawio.svg](paths.drawio.svg)
+- [Python Environment](./bits/eng-1-python-env/README.md)
 
 ## Contribution 
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Practical AI :: Python Environment
+---
+
 # Python Environment
 
 This bit provides instructions on how to set up a Python environment on your local machine.
@@ -11,12 +16,8 @@ This bit provides instructions on how to set up a Python environment on your loc
 
 ## Resources
 
-- [Official Python Download Page](https://www.python.org/downloads/)
-- [Python Virtual Environments](https://docs.python.org/3/library/venv.html)
-- [Guide](./guide.md)
+First go [Installation](./installation.md) guide to install Python and then learn how to use [Virtual Environment](./virtual-environment.md).
 
-
-    
 ## Exercises
 
 1. Check if Python is already installed on your machine.
