@@ -1,0 +1,621 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Installation - Practical AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installing-python-a-step-by-step-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Practical AI" class="md-header__button md-logo" aria-label="Practical AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Practical AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Practical AI" class="md-nav__button md-logo" aria-label="Practical AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Practical AI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Environment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#determine-the-latest-stable-python-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determine the Latest Stable Python Version
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-check-if-python-is-already-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Check if Python is Already Installed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-download-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Download Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-install-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Install Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-verify-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Verify the Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacOS Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MacOS Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-check-if-python-is-already-installed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Check if Python is Already Installed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-download-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Download Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-install-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Install Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Install Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-installation-using-homebrewhttpsbrewsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Installation Using [Homebrew](https://brew.sh/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-verify-the-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Verify the Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<hr />
+<p>layout: default
+title: Practical AI :: Installing Python</p>
+<hr />
+<h1 id="installing-python-a-step-by-step-guide">Installing Python: A Step-by-Step Guide</h1>
+<p>This guide will help you install Python on your system. Please follow the instructions specific to your operating system.</p>
+<h2 id="determine-the-latest-stable-python-version">Determine the Latest Stable Python Version</h2>
+<p>Before installing Python, check the <a href="https://devguide.python.org/versions/">Python release cycle</a> to determine the current stable version.</p>
+<h2 id="windows-installation">Windows Installation</h2>
+<h3 id="step-1-check-if-python-is-already-installed">Step 1: Check if Python is Already Installed</h3>
+<ol>
+<li>Open Command Prompt:<ul>
+<li>Press <code>Win + R</code>, type <code>cmd</code>, and press Enter.</li>
+</ul>
+</li>
+<li>
+<p>Check Python Version:</p>
+<p><code>bash
+python --version</code></p>
+<ul>
+<li>If Python is installed, it will display a version number (e.g., Python 3.9.7).</li>
+<li>If you receive an error or need a different version, proceed to Step 2.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-download-python">Step 2: Download Python</h3>
+<ol>
+<li>Visit the Official Python Website:<ul>
+<li>Go to <a href="python.org/downloads/windows">python.org/downloads/windows</a>.</li>
+</ul>
+</li>
+<li>Select the Latest Stable Release:<ul>
+<li>Choose the latest Python 3.x release that matches your system architecture (32-bit or 64-bit).</li>
+</ul>
+</li>
+<li>Download the Installer:<ul>
+<li>Click on the executable installer link (e.g., Windows installer (64-bit)).</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-3-install-python">Step 3: Install Python</h3>
+<ol>
+<li>Run the Installer:<ul>
+<li>Locate the downloaded file (e.g., <code>python-3.x.x-amd64.exe</code>) in your Downloads folder.</li>
+<li>Double-click the installer to launch it.</li>
+</ul>
+</li>
+<li>Customize Installation Options:<ul>
+<li>Important: Check the box that says “Add Python 3.x to PATH” at the bottom of the setup window.</li>
+<li>Click on “Install Now” for a default installation.</li>
+</ul>
+</li>
+<li>Follow the Setup Wizard:<ul>
+<li>If prompted by User Account Control, click “Yes” to allow the installer to make changes.</li>
+<li>Wait for the installation to complete.</li>
+</ul>
+</li>
+<li>Complete Installation:<ul>
+<li>Click “Close” to exit the setup wizard.</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-4-verify-the-installation">Step 4: Verify the Installation</h3>
+<ol>
+<li>Open a New Command Prompt Window:<ul>
+<li>This ensures the PATH changes take effect.</li>
+</ul>
+</li>
+<li>Check Python Version:
+    <code>python --version</code></li>
+<li>You should see the Python version you installed (e.g., Python 3.9.7).</li>
+</ol>
+<h2 id="macos-installation">MacOS Installation</h2>
+<h3 id="step-1-check-if-python-is-already-installed_1">Step 1: Check if Python is Already Installed</h3>
+<ol>
+<li>Open Terminal:
+    •   Go to <code>Finder &gt; Applications &gt; Utilities &gt; Terminal</code>.</li>
+<li>Check Python Version:
+    <code>python
+    python3 --version</code></li>
+<li>If Python 3.x is installed, it will display the version number.</li>
+<li>If you need Python 3.x or a different version, proceed to Step 2.</li>
+</ol>
+<h3 id="step-2-download-python_1">Step 2: Download Python</h3>
+<ol>
+<li>Visit the Official Python Website:</li>
+<li>Go to https://python.org/downloads/macos.</li>
+<li>Download the Installer:</li>
+<li>Click on the latest Python 3.x macOS 64-bit universal2 installer (e.g., <code>python-3.x.x-macos11.pkg</code>).</li>
+</ol>
+<h3 id="step-3-install-python_1">Step 3: Install Python</h3>
+<ol>
+<li>Run the Installer:</li>
+<li>Locate the downloaded .pkg file in your Downloads folder.</li>
+<li>Double-click the installer to launch it.</li>
+<li>Follow the Installation Steps:<ul>
+<li>Click “Continue” through the introduction and license agreement.</li>
+<li>Click “Agree” to accept the license terms.</li>
+<li>Click “Install” to begin the installation.</li>
+<li>Enter your administrator password if prompted.</li>
+</ul>
+</li>
+<li>Complete Installation:<ul>
+<li>Once the installation is successful, click “Close”.</li>
+</ul>
+</li>
+</ol>
+<h4 id="alternative-installation-using-homebrewhttpsbrewsh">Alternative Installation Using [Homebrew](https://brew.sh/</h4>
+<p>If you prefer using a package manager, you can install Python via Homebrew.</p>
+<ol>
+<li>Install <a href="https://brew.sh/">Homebrew</a> (if not already installed):</li>
+<li>Update Homebrew:
+    <code>bash
+    brew update</code></li>
+<li>Install Python 3:
+    <code>brew install python</code></li>
+<li>Verify the Installation:
+    <code>bash
+    python3 --version</code></li>
+</ol>
+<h3 id="step-4-verify-the-installation_1">Step 4: Verify the Installation</h3>
+<ol>
+<li>Open a New Terminal Window.</li>
+<li>Check Python Version:
+    <code>bash
+    python3 --version</code></li>
+<li>You should see the Python version you installed.</li>
+</ol>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li>Environment Variables (Windows):</li>
+<li>If you forgot to add Python to the PATH during installation, you can add it manually:<ol>
+<li>Go to Control Panel &gt; System and Security &gt; System.</li>
+<li>Click on Advanced system settings.</li>
+<li>Click Environment Variables.</li>
+<li>Under System Variables, find and select Path, then click Edit.</li>
+<li>Click New and add the path to your Python installation (e.g., C:\Python39).</li>
+</ol>
+</li>
+<li>Using python3 vs. python:</li>
+<li>On MacOS and Linux, use python3 to ensure you’re using Python 3.x, since python may point to Python 2.x.</li>
+<li>Installing <code>pip</code>:</li>
+<li><code>pip</code> is the package installer for Python and is included by default in Python 3.4 and above.</li>
+<li>
+<p>Verify Pip installation:</p>
+<p><code>bash
+pip3 --version</code>
+  - If Pip is not installed, go to <a href="https://pip.pypa.io/en/stable/installation/">https://pip.pypa.io/en/stable/installation/</a> for installation instructions.</p>
+</li>
+</ul>
+<h3 id="next-steps">Next Steps</h3>
+<ul>
+<li><a href="../virtual-environment/">Virtual Environment</a>: Learn how to create isolated Python environments for your projects.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
