@@ -1,0 +1,7 @@
+site_name: Practical AI
+nav:
+  - Home: index.md
+  - Python Environment: bits/eng-1-python-env/README.md
+
+theme:
+  name: material

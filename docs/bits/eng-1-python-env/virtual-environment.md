@@ -1,3 +1,8 @@
+---
+layout: default
+title: Practical AI :: Configure Python Virtual Environment
+---
+
 ## Configure Python Virtual Environment
 
 Creating a `virtual environment` for your Python project is a best practice. It allows you to manage project-specific dependencies without affecting other projects or the global Python installation. This ensures consistency across different development and production environments.
